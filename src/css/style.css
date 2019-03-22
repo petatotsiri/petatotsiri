@@ -1,0 +1,39 @@
+* {
+  margin:0 auto;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+}
+
+#petato {
+  font-size: 200%;
+}
+
+@keyframes petaei {
+  0% {
+    transform: scale(1, 1) translate(0px, 0px)  rotate(0deg);
+  }
+  30% {
+    transform: scale(1.2, 1.2) translate(100px, 300px) rotate(-90deg);
+  }
+  100% {
+    transform: scale(0.04, 0.04) translate(100px, -500px) rotate(360deg);
+  }
+}
+
+.animation {
+  animation-name: petaei;
+  /* animation-timing-function: ease-out; */
+  animation-duration: 1s;
+}

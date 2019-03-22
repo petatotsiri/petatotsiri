@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kav Game</title>
+  <script src="./../../node_modules/three/build/three.js"></script>
+  <script src="./src/js/index.js" type="module" defer></script>
+  <link rel="stylesheet" type="text/css" href="./src/css/style.css" defer>
+</head>
+<body>  
+  <div id="game">
+    <img id='tsiri' src="./images/tsiri_1.png" alt="tsiri">
+  </div>
+  <h1>Στρίψε το τσίρι</h1>
+  <div class="controls">
+    <div id="tzivana">
+      <p>Τζιβάνα</p>
+      <input type="radio" name="tzivana" id="tzivana1" value="1"><label for="tzivana1">Μικρή</label><br>
+      <input type="radio" name="tzivana" id="tzivana2" value="2"><label for="tzivana2">Μεσαία</label><br>
+      <input type="radio" name="tzivana" id="tzivana3" value="3"><label for="tzivana3">Μεγάλη</label><br>
+    </div>
+    <div id="xartakia">
+      <p>Χαρτάκια</p>
+      <input type="radio" name="xartakia" id="xartakia1" value="1"><label for="xartakia1">1</label><br>
+      <input type="radio" name="xartakia" id="xartakia2" value="2"><label for="xartakia2">2</label><br>
+      <input type="radio" name="xartakia" id="xartakia3" value="3"><label for="xartakia3">3</label><br>
+    </div>
+    <div class="fou">
+        <p>Φου</p>
+        <div id="demo1"></div>
+        <div class="slidecontainer">
+          <input type="range" min="0" max="100" value="0" class="slider" id="fou">
+        </div>
+    </div>
+    <div class="kapnos">
+        <p>Καπνός</p>
+        <div id="demo2"></div>
+        <div class="slidecontainer"> 
+          <input type="range" min="0" max="100" value="0" class="slider" id="kapnos">
+        </div>
+        <input id="petato" type="button" value="Πέτα το!">
+    </div>
+  </div>
+</body>
+</html>
